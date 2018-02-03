@@ -14,7 +14,6 @@ if(status == "Connected"):
     chat_id = msg['chat']['id']
     command = msg['text']
     print 'Got command: %s' % command
-
     if(command == "ping"):
         bot.sendMessage(chat_id,"pong")
         print"pong"
@@ -26,6 +25,11 @@ if(status == "Connected"):
         bot.sendMessage(chat_id,"Light is off Now")
     if(command == "lightoff"):
         bot.sendMessage(chat_id,"light is off Now")
+    if(command == "acon"):
+        bot.sendMessage(chat_id,"AC is off Now")
+    if(command == "acoff"):
+        bot.sendMessage(chat_id,"AC is off Now")
+
 
   bot = telepot.Bot('321092089:AAGDwCA0tg9e0JZp5TDE7gp_oSkzPFFr3go')
   bot.message_loop(handle) 
