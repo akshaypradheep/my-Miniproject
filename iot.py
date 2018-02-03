@@ -18,11 +18,13 @@ if(status == "Connected"):
     if(command == "ping"):
         bot.sendMessage(chat_id,"pong")
         print"pong"
-    if(command == "hi"):
-        bot.sendMessage(chat_id,"hello dude")
+    if(command == "ledon"):
+        bot.sendMessage(chat_id,"led is on Now")
+    if(command == "ledoff"):
+        bot.sendMessage(chat_id,"led is off Now")s
 
   bot = telepot.Bot('321092089:AAGDwCA0tg9e0JZp5TDE7gp_oSkzPFFr3go')
-  bot.message_loop(handle)
+  bot.message_loop(handle) 
 
 
   while 1:
