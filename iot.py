@@ -21,7 +21,11 @@ if(status == "Connected"):
     if(command == "ledon"):
         bot.sendMessage(chat_id,"led is on Now")
     if(command == "ledoff"):
-        bot.sendMessage(chat_id,"led is off Now")s
+        bot.sendMessage(chat_id,"led is off Now")
+    if(command == "lighton"):
+        bot.sendMessage(chat_id,"Light is off Now")
+    if(command == "lightoff"):
+        bot.sendMessage(chat_id,"light is off Now")
 
   bot = telepot.Bot('321092089:AAGDwCA0tg9e0JZp5TDE7gp_oSkzPFFr3go')
   bot.message_loop(handle) 
